@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Banner</title>
+  <style type="text/css">
+@font-face {
+	font-family: 'Futura';
+	src: url('FuturaMediumC.eot');
+	src: local('Futura Medium Cyrillic'), local('FuturaMediumC'),
+		url('fonts/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+		url('fonts/FuturaMediumC.woff') format('woff'),
+		url('fonts/FuturaMediumC.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+.banner {
+   font-family: 'Futura', sans-serif;
+   position:relative;
+   width:240px;
+   height:400px;
+   background:linear-gradient(-45deg,#a1cbee,#e0eef8,#f6e4e6,#ddb8cb);
+   animation:gradientBG 6s ease infinite;
+   background-size:400% 400%;
+}
+   @-webkit-keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+.banner p {
+	padding: 10px 10px 20px;
+	margin: 0;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.lg {
+	display:block; 
+	margin:10px auto 0;
+}
+
+.wb {
+	width:35px;
+	position:absolute;
+	top:6px;
+	right:8px;
+}
+
+.rbw {
+	margin: 20px auto 0;
+	text-decoration:none;
+    color:#333;
+	font-size: 18px;
+	width:calc(160px + 8px);
+	height:calc(40px + 8px);
+	background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+	border-radius:50px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-size:16px;
+	font-weight:bold;
+}
+.rbw:after {
+	content:attr(alt);
+	width:160px;
+	height:40px;
+	border-radius:50px;
+	background-color:#fff;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.rbw:hover {
+	animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+	background-position:330px;
+  }
+}
+@-webkit-keyframes slidebg {
+  to {
+	background-position:20vw;
+  }
+}
+
+.slider {
+  max-width: 120px;
+  height: 180px;
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8,
+.glide1,.glide2,.glide3,.glide4,.glide5,.glide6,.glide7,.glide8 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover!important;
+}
+.slide1 {
+  background: url("img/1.jpg") no-repeat center;   
+    animation:fade 40s infinite;
+-webkit-animation:fade 40s infinite;
+
+} 
+.slide2 {
+  background: url("img/2.jpg") no-repeat center;
+    animation:fade2 40s infinite;
+-webkit-animation:fade2 40s infinite;
+}
+.slide3 {
+  background: url("img/3.jpg") no-repeat center;
+  animation:fade3 40s infinite;
+-webkit-animation:fade3 40s infinite;
+}
+.slide4 {
+  background: url("img/4.jpg") no-repeat center;
+  animation:fade4 40s infinite;
+-webkit-animation:fade4 40s infinite;
+}
+.slide5 {
+  background: url("img/5.jpg") no-repeat center;
+  animation:fade5 40s infinite;
+-webkit-animation:fade5 40s infinite;
+}
+.slide6 {
+  background: url("img/6.jpg") no-repeat center;
+  animation:fade6 40s infinite;
+-webkit-animation:fade6 40s infinite;
+}
+.slide7 {
+  background: url("img/7.jpg") no-repeat center;
+  animation:fade7 40s infinite;
+-webkit-animation:fade7 40s infinite;
+}
+.slide8 {
+  background: url("img/8.jpg") no-repeat center;
+  animation:fade8 40s infinite;
+-webkit-animation:fade8 40s infinite;
+}
+
+.glider {
+  max-width: 120px;
+  height: 180px;
+  position: relative;
+  margin-left: 120px;
+  margin-top: -180px;
+}
+
+.glide1 {
+  background: url("img/9.jpg")no-repeat center;
+
+    animation:fade 40s infinite;
+-webkit-animation:fade 40s infinite;
+
+} 
+.glide2 {
+  background: url("img/10.jpg")no-repeat center;
+
+    animation:fade2 40s infinite;
+-webkit-animation:fade2 40s infinite;
+}
+.glide3 {
+    background: url("img/11.jpg")no-repeat center;
+
+    animation:fade3 40s infinite;
+-webkit-animation:fade3 40s infinite;
+}
+.glide4 {
+    background: url("img/12.jpg")no-repeat center;
+
+    animation:fade4 40s infinite;
+-webkit-animation:fade4 40s infinite;
+}
+.glide5 {
+    background: url("img/13.jpg")no-repeat center;
+
+    animation:fade5 40s infinite;
+-webkit-animation:fade5 40s infinite;
+}
+.glide6 {
+    background: url("img/14.jpg")no-repeat center;
+
+    animation:fade6 40s infinite;
+-webkit-animation:fade6 40s infinite;
+}
+.glide7 {
+    background: url("img/15.jpg")no-repeat center;
+
+    animation:fade7 40s infinite;
+-webkit-animation:fade7 40s infinite;
+}
+.glide8 {
+    background: url("img/16.jpg")no-repeat center;
+
+    animation:fade8 40s infinite;
+-webkit-animation:fade8 40s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  12.5% { opacity: 0}
+  25% { opacity: 0}
+  37.5% { opacity: 0}
+  50% { opacity: 0}
+  62.5% { opacity: 0}
+  75% { opacity: 0}
+  87.5% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  12.5% { opacity: 1}
+  25% { opacity: 0}
+  37.5% { opacity: 0}
+  50% { opacity: 0}
+  62.5% { opacity: 0}
+  75% { opacity: 0}
+  87.5% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  12.5% { opacity: 0}
+  25% { opacity: 1}
+  37.5% { opacity: 0}
+  50% { opacity: 0}
+  62.5% { opacity: 0}
+  75% { opacity: 0}
+  87.5% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade4
+{
+  0%   {opacity:0}
+  12.5% { opacity: 0}
+  25% { opacity: 0}
+  37.5% { opacity: 1}
+  50% { opacity: 0}
+  62.5% { opacity: 0}
+  75% { opacity: 0}
+  87.5% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade5
+{
+  0%   {opacity:0}
+  12.5% { opacity: 0}
+  25% { opacity: 0}
+  37.5% { opacity: 0}
+  50% { opacity: 1}
+  62.5% { opacity: 0}
+  75% { opacity: 0}
+  87.5% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade6
+{
+  0%   {opacity:0}
+  12.5% { opacity: 0}
+  25% { opacity: 0}
+  37.5% { opacity: 0}
+  50% { opacity: 0}
+  62.5% { opacity: 1}
+  75% { opacity: 0}
+  87.5% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade7
+{
+  0%   {opacity:0}
+  12.5% { opacity: 0}
+  25% { opacity: 0}
+  37.5% { opacity: 0}
+  50% { opacity: 0}
+  62.5% { opacity: 0}
+  75% { opacity: 1}
+  87.5% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade8
+{
+  0%   {opacity:0}
+  12.5% { opacity: 0}
+  25% { opacity: 0}
+  37.5% { opacity: 0}
+  50% { opacity: 0}
+  62.5% { opacity: 0}
+  75% { opacity: 0}
+  87.5% { opacity: 1}
+  100% { opacity: 0}
+}
+  </style>
+  
+ </head>
+ <body>
+ 
+  <div class="banner">
+  
+	<a href="%request.reference%@%banner.event1%" target="%banner.target%"><img src="img/lg.png" class="lg"></img></a>
+	<a href="%request.reference%@%banner.event2%" target="%banner.target%"><img src="img/wb.png" class="wb"></img></a>
+	
+	<p>Большие размеры </br> Большие скидки</p>
+	
+	<div class='slider'>
+	  <div class='slide1'></div>
+	  <div class='slide2'></div>
+	  <div class='slide3'></div>
+	  <div class='slide4'></div>
+	  <div class='slide5'></div>
+	  <div class='slide6'></div>
+	  <div class='slide7'></div>
+	  <div class='slide8'></div>
+	</div>
+	
+	<div class='glider'>
+	  <div class='glide1'></div>
+	  <div class='glide2'></div>
+	  <div class='glide3'></div>
+	  <div class='glide4'></div>
+	  <div class='glide5'></div>
+	  <div class='glide6'></div>
+	  <div class='glide7'></div>
+	  <div class='glide8'></div>
+	</div>
+  
+	<a href="%request.reference%@%banner.event3%" target="%banner.target%" class="rbw" alt="Подробнее"></a>
+	
+  </div>
+  
+ </body>
+</html>
