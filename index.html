@@ -18,8 +18,8 @@
 .banner {
    font-family: 'Futura', sans-serif;
    position:relative;
-   width:240px;
-   height:400px;
+   width:300px;
+   height:300px;
    background:linear-gradient(-45deg,#a1cbee,#e0eef8,#f6e4e6,#ddb8cb);
    animation:gradientBG 6s ease infinite;
    background-size:400% 400%;
@@ -27,44 +27,45 @@
    @-webkit-keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes gradientBG{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 
 .banner p {
-	padding: 10px 10px 20px;
+	padding: 0px 10px 10px;
 	margin: 0;
 	text-align: center;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 16px;
+	line-height: 22px;
 }
 
 .lg {
 	display:block; 
-	margin:10px auto 0;
+	margin:0px auto 0;
+	max-height:45px;
 }
 
 .wb {
-	width:35px;
+	width:30px;
 	position:absolute;
 	top:6px;
 	right:8px;
 }
 
 .rbw {
-	margin: 20px auto 0;
+	margin: 10px auto 0;
 	text-decoration:none;
     color:#333;
 	font-size: 18px;
-	width:calc(160px + 8px);
-	height:calc(40px + 8px);
+	width:calc(250px + 8px);
+	height:calc(30px + 8px);
 	background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
 	border-radius:50px;
 	display:flex;
 	align-items:center;
 	justify-content:center;
-	font-size:16px;
+	font-size:15px;
 	font-weight:bold;
 }
 .rbw:after {
 	content:attr(alt);
-	width:160px;
-	height:40px;
+	width:250px;
+	height:30px;
 	border-radius:50px;
 	background-color:#fff;
 	display:flex;
@@ -87,8 +88,8 @@
 }
 
 .slider {
-  max-width: 120px;
-  height: 180px;
+  max-width: 150px;
+  height: 165px;
   position: relative;
 }
 .slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8,
@@ -141,11 +142,11 @@
 }
 
 .glider {
-  max-width: 120px;
-  height: 180px;
+  max-width: 150px;
+  height: 165px;
   position: relative;
-  margin-left: 120px;
-  margin-top: -180px;
+  margin-left: 150px;
+  margin-top: -165px;
 }
 
 .glide1 {
@@ -303,7 +304,7 @@
 	<a href="%request.reference%@%banner.event1%" target="%banner.target%"><img src="img/lg.png" class="lg"></img></a>
 	<a href="%request.reference%@%banner.event2%" target="%banner.target%"><img src="img/wb.png" class="wb"></img></a>
 	
-	<p>Большие размеры </br> Большие скидки</p>
+	<p>Большие размеры • Большие скидки</p>
 	
 	<div class='slider'>
 	  <div class='slide1'></div>
